@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Method 1</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="numberGenerator.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+        var numbers = GenerateTestArray(10000);
+
+        var startTime = new Date().getTime();
+
+        // use jQuery each and append
+        $.each(numbers, function(index, value) {
+          $('#targetList').append('<li value="' + value.value + '">' + value.name + '</li>');
+        });
+
+        var endTime = new Date().getTime();
+        var duration = endTime - startTime;
+
+        $('#timerDiv').text('Exec time: ' + duration + 'ms');
+
+      });
+    </script>
+  </head>
+  <body>
+    <div>jQuery $.each with appends for each record</div>
+    <div id="timerDiv"></div>
+    <ol id="targetList"></ol>
+  </body>
+</html>

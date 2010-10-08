@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Method 2</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="numberGenerator.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+        var numbers = GenerateTestArray(10000);
+
+        var startTime = new Date().getTime();
+
+        // Use jQuery each with array and join
+        var html = new Array();
+        var h = 0;
+
+        $.each(numbers, function(index, value) {
+          html[h++] = '<li value=' + value.value + '>' + value.name + '</li>';   
+        });
+
+        $('#targetList').append(html.join('\r\n'));
+
+        var endTime = new Date().getTime();
+        var duration = endTime - startTime;
+
+        $('#timerDiv').text('Exec time: ' + duration + 'ms');
+
+      });
+    </script>
+  </head>
+  <body>
+    <div>jQuery $.each() with an array built and appended once</div>
+    <div id="timerDiv"></div>
+    <ol id="targetList"></ol>
+  </body>
+</html>
