@@ -1,6 +1,10 @@
 jQuery templating demo that includes metrics of a few different ways of inserting HTML.  Execution times are included for each method insterting 10000 list items.
 
-# EXAMPLES
+
+# TEMPLATING EXAMPLES
+* example1: Uses a template that includes an {{each}} loop.
+
+# TIMING DEMOS
 * method1: Appending html to a file using an $.each() loop appending each time.  Execution time: 2973ms.
 * method2: Building an array of html in an $.each() loop and appending it once with a .join() call.  Execution time: 1605ms.
 * method3: Building an array in a JavaScript foreach loop appending once with a .join() call.  Execution time: 582ms.
