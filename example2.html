@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Example 1</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="numberGenerator.js"></script>
+    <script type="text/javascript" src="http://github.com/jquery/jquery-tmpl/raw/master/jquery.tmpl.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+        var numbers = GenerateComplexTestArray(10);
+
+        $("#exampleTemplate").tmpl(numbers).appendTo('#targetDiv');
+
+      });
+    </script>
+
+    <script id="exampleTemplate" type="text/x-jquery-tmpl">
+      <div class="itemDiv">
+        Value: ${value} - Name: ${name}
+        {{if (value % 2 == 0)}}
+          <div>This one's even</div>
+        {{/if}}
+        <ul>
+          {{each children}}
+            <li value=${childValue}>${childName}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </script>
+  </head>
+  <body>
+    <div>jQuery templating example with an each loop and an if statement</div>
+    <div id="targetDiv"></div>
+  </body>
+</html>

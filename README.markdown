@@ -1,8 +1,8 @@
-jQuery templating demo that includes metrics of a few different ways of inserting HTML.  Execution times are included for each method insterting 10000 list items.
-
+jQuery templating demo that includes metrics of a few different ways of inserting HTML.  Execution times are included for each method insterting 10000 list items.  The templates plugin is located at [http://github.com/jquery/jquery-tmpl] and the API is [http://api.jquery.com/category/plugins/templates/]
 
 # TEMPLATING EXAMPLES
 * example1: Uses a template that includes an {{each}} loop.
+* example2: Builds upon example1 to include an {{if}} statement.
 
 # TIMING DEMOS
 * method1: Appending html to a file using an $.each() loop appending each time.  Execution time: 2973ms.
