@@ -27,6 +27,6 @@ All methods loop to create 10000 objects.
 # TAKEAWAY
 It appears at this point that the [templating engine](http://github.com/jquery/jquery-tmpl) is a bit slower than building the html in an array and joining it.
 
-The longest part of the process does seem to be the building of the output and not the rendering which was my first guess (for example one pass too 1505ms to create the objects and 345ms to append them).
+The longest part of the process does seem to be the building of the output and not the rendering which was my first guess (for example one pass took 1505ms to create the object and 345ms to append it).
 
 *Note, IE6 seems to be having trouble dealing with the methods that rely on a large in memory object.  When only looping 100 times IE6's results look much like Firefox's.
