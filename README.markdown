@@ -6,6 +6,7 @@ jQuery templating demo that includes metrics of a few different ways of insertin
 
 # TIMING DEMOS
 All methods loop to create 10000 objects.
+
 * method1: Appending html to a file using an $.each() loop appending each time. 
 	* Execution times:
 		* Firefox 3.5: 2973ms
