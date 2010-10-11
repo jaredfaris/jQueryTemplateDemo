@@ -7,19 +7,19 @@ jQuery templating demo that includes metrics of a few different ways of insertin
 # TIMING DEMOS
 All methods loop to create 10000 objects.
 * method1: Appending html to a file using an $.each() loop appending each time. 
-	*Execution times:
+	* Execution times:
 		* Firefox 3.5: 2973ms
 		* Internet Explorer 6.0: 9579ms*
 * method2: Building an array of html in an $.each() loop and appending it once with a .join() call.  
-	*Execution times:
+	* Execution times:
 		* Firefox 3.5: 1605ms
 		* Internet Explorer 6.0: 34766ms*
 * method3: Building an array in a JavaScript foreach loop appending once with a .join() call.
-	*Execution times:
+	* Execution times:
 		* Firefox 3.5: 582ms
 		* Internet Explorer 6.0: 34516ms*
 * method4: Building a jQuery template and using the .tmpl() and .appendTo() methods.
-	*Execution times:
+	* Execution times:
 		* Firefox 3.5: 1555ms
 		* Internet Explorer 6.0: 84189ms*
 
