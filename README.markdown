@@ -1,3 +1,5 @@
+Demo viewable at [fierce-snow-95.heroku.com](fierce-snow-95.heroku.com).
+
 jQuery templating demo that includes metrics of a few different ways of inserting HTML.  Execution times are included for each method insterting 10000 list items.  The templates plugin is located  [here](http://github.com/jquery/jquery-tmpl) and the API is [here](http://api.jquery.com/category/plugins/templates/)
 
 # TEMPLATING EXAMPLES
