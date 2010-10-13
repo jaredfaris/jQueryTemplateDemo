@@ -4,6 +4,7 @@
     { "section" : "title" },
     { "section" : "jQueryTemplating" },
     { "section" : "JasmineTesting" },
-    { "section" : "JasmineWithjQuery" } 
+    { "section" : "JasmineWithjQuery" },
+    { "section" : "questions" }
   ]
 }
