@@ -1,0 +1,9 @@
+{ 
+  "name": "jQuery Templating and Jasmine Testing", 
+  "sections": [ 
+    { "section" : "title" },
+    { "section" : "jQueryTemplating" },
+    { "section" : "JasmineTesting" },
+    { "section" : "JasmineWithjQuery" } 
+  ]
+}
