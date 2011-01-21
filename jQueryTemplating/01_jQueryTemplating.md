@@ -59,7 +59,7 @@
 * Poor SOC makes it harder to make changes later or find where stuff happens.
 
 !SLIDE small smbullets
-# Why Presentation In Behavior Is Bad
+## Why Presentation In Behavior Is Bad
 * We have CSS in our stylesheet and our scripts.
 * It's really easy to lose track of what is applying what styles.
 * It's really easy to get weird inheritance.
