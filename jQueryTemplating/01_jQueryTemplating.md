@@ -101,4 +101,4 @@
 !SLIDE small smbullets
 # Performance
 * For large numbers of elements the templating engine is not as fast as building an HTML array.
-* Execution times for a few different methods can be seen [here](http://github.com/velesin/jasmine-jquery).
+* Execution times for a few different methods can be seen [here](https://github.com/jaredfaris/jQueryTemplateDemo).
